@@ -1,0 +1,211 @@
+body, html{
+  margin: 0;
+  border: 0;
+  padding:0;
+ background-color: #e3d190;
+ transition: 0.5s;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 4.5%;
+  width: 100%;
+  height: 
+  z-index: 11;
+        
+        color: #fff; /* цвет текста */
+        padding: 10px; /* отступы внутри блока */
+        text-align: center; /* выравнивание текста по центру */
+      }
+      
+      /* CSS для стилизации заголовка */
+      header h1 {
+        font-family: 'Delicious Handrawn', cursive;
+        font-size: 60px; /* размер шрифта */
+        margin: 0; /* убираем отступы */
+      }
+      
+      /* CSS для стилизации подзаголовка */
+      header h2 {
+        font-family: 'Rubik', sans-serif;
+        color: grey;
+        font-size: 30px; /* размер шрифта */
+        margin: 0; /* убираем отступы */
+        font-style: italic; /* курсивное начертание */
+      }
+
+#menu {
+        background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(39,39,39,1) 100%);
+        color: #fff; /* цвет текста */
+        position: fixed; /* фиксированное позиционирование */
+        left: 0; /* прикрепляем к левому краю */
+        top: 0; /* прикрепляем к верхнему краю */
+        bottom: 0; /* заполняем всю высоту */
+        width: 10%; /* задаем ширину */
+        padding: 20px; /* отступы внутри блока */
+        z-index: 10
+      }
+      #menu h1 {
+        text-align: center;
+        font-family: 'Delicious Handrawn', cursive;
+        font-size: 60px; /* размер шрифта */
+        margin: 0; /* убираем отступы */
+      }
+      
+      /* CSS для стилизации ссылок в меню */
+      #menu a {
+        text-align: center;
+        font-family: 'Delicious Handrawn', cursive;
+        font-size: 1.7em;
+        display: block; /* каждая ссылка на новой строке */
+        color: gray; /* цвет текста */
+        text-decoration: none; /* убираем подчеркивание */
+        padding: 10px 0; /* вертикальные отступы */
+        border-bottom: 1px solid #666; /* горизонтальная черта под каждой ссылкой */
+        transition: 0.3s;
+      }
+      .first{
+        margin-top: 60px;
+      }
+      #menu a:hover{
+        color: white;
+        text-shadow: 0px 0px 10px whitesmoke;
+      }
+      /* CSS для стилизации активной ссылки */
+      #menu a.active {
+       color: white;
+      }
+
+ #my-block {
+  margin: 0 auto;
+ 
+
+        padding: 20px; /* отступы внутри блока */
+        width: 45%;
+        border-radius: 10px; /* скругленные углы */
+
+        text-align: center; /* выравнивание содержимого по центру */
+      }
+.container_all{
+  align-items: center;
+  width: 90%;
+  height: 100vh;
+  float: right;
+}
+.blocks{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 60px;
+}
+.headline{ transition: 2s;
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 3em;
+}
+.txt{
+  transition: 2s;
+  font-family: 'Righteous', cursive;
+  font-size: 2em;
+}
+.blocks2{
+  width: 100%;
+  height: 5vh;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bf7961;
+  border-radius: 20px;
+  border: 4px solid black;
+}
+
+/* стилизация scrollbar для Gecko (Firefox) */
+::-moz-scrollbar {
+  width: 10px;
+}
+
+::-moz-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+/* стилизация scrollbar для Internet Explorer / Edge */
+::-ms-scrollbar {
+  width: 10px;
+}
+
+::-ms-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-ms-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.switch {
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.round {
+  border-radius: 34px;
+}
